@@ -4,69 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Diego Alejandro Agudelo Torres</title>
+    <!-- Tailwind CSS por CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Diego Alejandro Agudelo Torres</h1>
-        <figure class="img-portada">
-        <img class="box-img-portada" src="assets/img/mi-foto.jpeg" alt="mi foto de perfil" width="400" height="400">
-    </figure>
+<body class="bg-slate-950 text-slate-100 font-['Open_Sans'] antialiased min-h-screen selection:bg-indigo-500 selection:text-white">
+
+    <!-- Elemento decorativo de fondo (Glow superior) -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-b from-indigo-600/20 via-purple-600/10 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Hero Section / Encabezado -->
+    <header class="relative border-b border-slate-800/80 bg-slate-900/50 backdrop-blur-md pt-12 pb-16 px-4 overflow-hidden">
+        <div class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+            
+            <!-- Texto principal -->
+            <div class="text-center md:text-left flex-1 space-y-4">
+                <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-indigo-400 bg-indigo-500/10 border border-indigo-500/30 rounded-full uppercase">
+                    Disponible para proyectos
+                </span>
+                <h1 class="font-['Montserrat'] text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                    Diego Alejandro <br class="hidden sm:inline" />
+                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Agudelo Torres
+                    </span>
+                </h1>
+                <p class="text-lg text-slate-300 font-medium">
+                    Desarrollador de Software <span class="text-indigo-400">|</span> Apasionado por la tecnología
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="#contacto" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg shadow-lg shadow-indigo-600/30 transition-all transform hover:-translate-y-0.5">
+                        Contactar
+                    </a>
+                    <a href="https://github.com/diegoagudelo" target="_blank" class="px-5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold rounded-lg transition-all">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Foto de perfil destacada -->
+            <div class="relative group shrink-0">
+                <!-- Efecto resplandor detrás de la foto -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                
+                <figure class="relative">
+                    <img class="w-52 h-52 sm:w-64 sm:h-64 rounded-full object-cover border-4 border-slate-900 shadow-2xl" 
+                         src="assets/img/mi-foto.jpeg" 
+                         alt="Diego Alejandro Agudelo Torres">
+                </figure>
+            </div>
+
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Sobre Mí</h2>
-            <p>Hola, soy un desarrollador de software apasionado por crear experiencias digitales únicas, actualmente me
-                encuentro estudiando en Riwi,<br>
-                un centro de entrenamiento de alta intensidad, también me encuentro estudiando una tecnologia de
-                desarrollo de software en el ITM(Instituto Tecnológico Metropolitano)<br>
-                soy una persona que le gusta aprender cosas nuevas y siempre estoy buscando mejorar mis habilidades en
-                el desarrollo de software, <br>
-                tengo la capacidad de trabajar en equipo y me gusta colaborar con otros desarrolladores para crear
-                proyectos innovadores. </p>
+
+    <!-- Contenido principal -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-12">
+
+        <!-- Sobre Mí -->
+        <section class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl relative overflow-hidden group hover:border-indigo-500/40 transition-colors">
+            <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-indigo-500 to-purple-500"></div>
+            <h2 class="font-['Montserrat'] text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                <span class="text-indigo-400">#</span> Sobre Mí
+            </h2>
+            <div class="space-y-3 text-slate-300 leading-relaxed">
+                <p>
+                    Hola, soy un desarrollador de software entusiasta por crear experiencias digitales funcionales y modernas. Actualmente fortalezco mis competencias en <strong class="text-white">Riwi</strong> (centro de entrenamiento de alta intensidad) y curso la Tecnología en Desarrollo de Software en el <strong class="text-white">ITM (Instituto Tecnológico Metropolitano)</strong>.
+                </p>
+                <p>
+                    Me enfoco en el aprendizaje continuo, la resolución eficaz de problemas y el trabajo colaborativo en equipo para aportar valor en proyectos innovadores.
+                </p>
+            </div>
         </section>
-        <section>
-            <h3>Estudios</h3>
-            <ul>
-                <li>Tecnólogo en Desarrollo de Software, <strong>ITM:</strong>2023, <strong>Estado:</strong> En curso
-                </li>
-                <li>Entrenamiento de alta intensidad, <strong>Riwi:</strong>2023, <strong>Estado:</strong> En curso</li>
-            </ul>
+
+        <!-- Grid: Estudios y Habilidades -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Estudios -->
+            <section class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl shadow-xl flex flex-col justify-between">
+                <div>
+                    <h3 class="font-['Montserrat'] text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <span class="text-indigo-400">🎓</span> Estudios
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700 transition-colors">
+                            <h4 class="font-bold text-white">Tecnólogo en Desarrollo de Software</h4>
+                            <p class="text-sm text-indigo-400 mt-1">ITM — Instituto Tecnológico Metropolitano</p>
+                            <span class="inline-block mt-2 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                                En curso (Desde 2023)
+                            </span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700 transition-colors">
+                            <h4 class="font-bold text-white">Entrenamiento de Alta Intensidad</h4>
+                            <p class="text-sm text-indigo-400 mt-1">Riwi Center</p>
+                            <span class="inline-block mt-2 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                                En curso (Desde 2023)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl shadow-xl">
+                <h3 class="font-['Montserrat'] text-xl font-bold text-white mb-6 flex items-center gap-2">
+                    <span class="text-indigo-400">⚡</span> Habilidades Técnicas
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                        <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Lenguajes</span>
+                        <span class="font-semibold text-white">HTML5 & CSS3</span>
+                    </div>
+                    <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                        <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Backend</span>
+                        <span class="font-semibold text-white">Spring Boot</span>
+                    </div>
+                    <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                        <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Control de versiones</span>
+                        <span class="font-semibold text-white">Git / GitHub</span>
+                    </div>
+                    <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                        <span class="block text-xs text-slate-400 uppercase tracking-wider font-semibold">Metodologías</span>
+                        <span class="font-semibold text-white">Scrum</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Proyectos -->
+        <section class="bg-slate-900/80 border border-slate-800 p-6 sm:p-8 rounded-2xl shadow-xl">
+            <h3 class="font-['Montserrat'] text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-indigo-400">🚀</span> Proyectos Destacados
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Proyecto Card 1 -->
+                <div class="group bg-slate-950/70 p-6 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-all hover:-translate-y-1 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-xl text-white group-hover:text-indigo-400 transition-colors">Rueda Libre</h4>
+                            <span class="text-xs font-medium px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded border border-indigo-500/20">Web App</span>
+                        </div>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                            Página web desarrollada utilizando maquetación semántica en HTML5 y hojas de estilos personalizadas con CSS3.
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">HTML</span>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto Card 2 -->
+                <div class="group bg-slate-950/70 p-6 rounded-xl border border-slate-800 hover:border-indigo-500/50 transition-all hover:-translate-y-1 shadow-lg flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <h4 class="font-bold text-xl text-white group-hover:text-indigo-400 transition-colors">Portafolio Personal</h4>
+                            <span class="text-xs font-medium px-2 py-1 bg-indigo-500/10 text-indigo-400 rounded border border-indigo-500/20">Web App</span>
+                        </div>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                            Sitio web interactivo estilo hoja de vida enfocado en presentar el perfil laboral, trayectoria de estudios y proyectos.
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">HTML</span>
+                        <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">Tailwind CSS</span>
+                    </div>
+                </div>
+
+            </div>
         </section>
-        <section>
-            <h3>Habilidades</h3>
-            <ul>
-                <li>Lenguajes de programación:html(Lenguaje de marcado de hipertexto), css.</li>
-                <li>Frameworks:Spring Boot.</li>
-                <li>Control de versiones: Git.</li>
-                <li>Metodologías ágiles: Scrum.</li>
-            </ul>
+
+        <!-- Contacto -->
+        <section id="contacto" class="bg-gradient-to-br from-indigo-950/40 via-slate-900 to-purple-950/40 border border-slate-800 p-8 sm:p-10 rounded-2xl shadow-xl text-center relative overflow-hidden">
+            <h3 class="font-['Montserrat'] text-2xl sm:text-3xl font-bold text-white mb-3">
+                ¿Trabajamos juntos?
+            </h3>
+            <p class="text-slate-300 max-w-md mx-auto mb-8">
+                Estoy abierto a oportunidades laborales y colaboraciones en desarrollo de software.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandroagudelo761@gmail.com&su=vista%20de%20la%20hoja%20de%20vida&body=Hola,%20quiero%20contactarme%20contigo%20para"
+                   target="_blank" 
+                   class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+                    Enviar Correo Electrónico
+                </a>
+                <a href="https://github.com/diegoagudelo" 
+                   target="_blank" 
+                   class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl border border-slate-700 transition-all shadow">
+                    Perfil de GitHub
+                </a>
+            </div>
         </section>
-        <section>
-            <h3>Proyectos</h3>
-            <ul>
-                <li>Rueda Libre: creacion de una pagina web utilizando html y css</li>
-                <li>Portafolio Personal: creacion de un sitio web personal, estilo hoja de vida, utilizando html y css
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contacto</h3>
-            <p>¿Tienes alguna pregunta o quieres colaborar en un proyecto? ¡No dudes en contactarme!</p>
-            <ul>
-                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=alejandroagudelo761@gmail.com&su=vista%20de%20la%20hoja%20de%20vida&body=Hola,%20quiero%20contactarme%20contigo%20para"
-                        target="_blank">alejandroagudelo761@gmail.com</a></li>
-                <li>Whatsapp:<li>
-                <li>GitHub: github.com/diegoagudelo</li>
-            </ul>
-        </section>
+
     </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-slate-500 text-sm border-t border-slate-900">
+        <p>© 2026 Diego Alejandro Agudelo Torres. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>
